@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Data Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js library (charts ke liye) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1>📊 API Data Dashboard</h1>
+    <span class="status" id="status">Loading...</span>
+  </header>
+
+  <main class="container">
+    <!-- Stat cards -->
+    <section class="cards" id="cards"></section>
+
+    <!-- Chart -->
+    <section class="chart-section">
+      <h2>Data Overview</h2>
+      <canvas id="dataChart"></canvas>
+    </section>
+
+    <!-- Search + Table -->
+    <section class="table-section">
+      <div class="table-header">
+        <h2>Records</h2>
+        <input type="text" id="search" placeholder="🔍 Search records...">
+      </div>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Company</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Built by <span>M Waseem Q</span> · Python Developer &amp; Web Automation Specialist
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
